@@ -1,0 +1,556 @@
+/*==============================
+GOOGLE FONT
+==============================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fb;
+    color:#333;
+    line-height:1.7;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:80px 0;
+}
+
+/*==============================
+NAVIGATION
+==============================*/
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 7%;
+}
+
+.logo h2{
+    color:#0f4c81;
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links li a{
+    color:#333;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links li a:hover{
+    color:#ff9800;
+}
+
+.quote-btn{
+    background:#ff9800;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.quote-btn:hover{
+    background:#0f4c81;
+}
+
+/*==============================
+HERO
+==============================*/
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),
+    rgba(0,0,0,.55)),
+    url("images/hero.jpg") center/cover no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:120px 20px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:58px;
+    margin-bottom:20px;
+    font-weight:800;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+/*==============================
+BUTTONS
+==============================*/
+
+.btn-primary{
+    display:inline-block;
+    padding:15px 35px;
+    background:#ff9800;
+    color:#fff;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#fff;
+    color:#0f4c81;
+}
+
+.btn-secondary{
+    display:inline-block;
+    padding:15px 35px;
+    border:2px solid #fff;
+    color:#fff;
+    border-radius:50px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:#0f4c81;
+}
+
+/*==============================
+PAGE HEADER
+==============================*/
+
+.page-header{
+    margin-top:80px;
+    background:linear-gradient(135deg,#0f4c81,#1e88e5);
+    color:#fff;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.page-header h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.page-header p{
+    font-size:20px;
+}
+
+/*==============================
+ABOUT SECTION
+==============================*/
+
+.about{
+    background:#fff;
+}
+
+.about h2{
+    text-align:center;
+    color:#0f4c81;
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+/*==============================
+ABOUT PAGE LAYOUT
+==============================*/
+
+.about-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-image img{
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.about-text h2{
+    color:#0f4c81;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    margin-bottom:20px;
+}
+
+/*==============================
+SECTION TITLES
+==============================*/
+
+section
+
+/*==============================
+SERVICES
+==============================*/
+
+.services{
+    background:#f8f9fb;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:15px;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.card i{
+    font-size:50px;
+    color:#ff9800;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+}
+
+/*==============================
+GALLERY
+==============================*/
+
+.gallery{
+    background:#fff;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.gallery-grid img{
+    height:260px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.4s;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
+
+/*==============================
+WHY CHOOSE US
+==============================*/
+
+.why{
+    background:#f8f9fb;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-grid div{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.why-grid h3{
+    color:#0f4c81;
+    margin-bottom:15px;
+}
+
+/*==============================
+MISSION
+==============================*/
+
+.mission{
+    background:#ffffff;
+}
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/*==============================
+LOCATION
+==============================*/
+
+.location{
+    background:#fff;
+    text-align:center;
+}
+
+.location iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:15px;
+    margin-top:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+/*==============================
+CONTACT
+==============================*/
+
+.contact{
+    background:#0f4c81;
+    color:#fff;
+    text-align:center;
+}
+
+.contact h2{
+    color:#fff;
+}
+
+.contact p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+.contact-btn{
+    display:inline-block;
+    background:#25D366;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#1ebc59;
+}
+
+/*==============================
+CALL TO ACTION
+==============================*/
+
+.cta{
+    background:linear-gradient(135deg,#0f4c81,#1976d2);
+    color:#fff;
+    text-align:center;
+}
+
+.cta h2{
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.cta p{
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+/*==============================
+FOOTER
+==============================*/
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/*==============================
+FLOATING WHATSAPP
+==============================*/
+
+.whatsapp{
+    position:fixed;
+    bottom:25px;
+    right:25px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    box-shadow:0 8px 25px rgba(0,0,0,.3);
+    transition:.3s;
+    z-index:999;
+}
+
+.whatsapp:hover{
+    transform:scale(1.1);
+}
+
+/*==============================
+ANIMATIONS
+==============================*/
+
+.card,
+.gallery-grid img,
+.about-image img{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(40px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:768px){
+
+.service-grid,
+.gallery-grid,
+.why-grid,
+.mission-grid{
+grid-template-columns:1fr;
+}
+
+.location iframe{
+height:300px;
+}
+
+.card{
+padding:25px;
+}
+
+.whatsapp{
+width:58px;
+height:58px;
+font-size:28px;
+bottom:18px;
+right:18px;
+}
+
+.contact-btn{
+width:100%;
+max-width:300px;
+}
+
+}
+
+@media(max-width:480px){
+
+.gallery-grid img{
+height:220px;
+}
+
+.location iframe{
+height:250px;
+}
+
+.card i{
+font-size:40px;
+}
+
+.card h3{
+font-size:20px;
+}
+
+.contact p,
+.cta p{
+font-size:16px;
+}
+
+footer{
+font-size:14px;
+}
+
+}
+
+
