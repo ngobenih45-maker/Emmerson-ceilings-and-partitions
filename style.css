@@ -455,10 +455,9 @@ rgba(37,99,235,.45)
 
 url(images/hero.jpg);
 
-background-size:cover;
-
-background-position:center;
-
+background-size: cover;
+background-position: center;
+min-height:100vh;
 background-attachment:fixed;
 
 position:relative;
@@ -721,7 +720,7 @@ transform:translateY(0);
 RESPONSIVE
 ====================================================*/
 
-@media(max-width:991px){
+@media(max-width:768px){
 
 .menu-btn{
 
@@ -988,7 +987,7 @@ MISSION & VISION
 }
 
 .mission-card:hover{
-    transform:translateY(-10px);
+  transform:translateY(-5px);
     box-shadow:var(--shadow-hover);
 }
 
