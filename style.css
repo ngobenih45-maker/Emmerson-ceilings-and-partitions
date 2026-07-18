@@ -1823,7 +1823,11 @@ text-align:center;
 /*==================================
 PROJECTS SECTION
 ==================================*/
-
+.gallery img{
+height:280px;
+object-fit:cover;
+width:100%;
+}
 .projects{
     background:var(--white);
     position:relative;
@@ -2549,11 +2553,11 @@ GOOGLE MAP
     box-shadow:none;
 }
 
-.map-container iframe{
-    display:block;
-    width:100%;
-    height:550px;
-    border:0;
+.map iframe{
+width:100%;
+height:450px;
+border-radius:15px;
+display:block;
 }
 /*==================================
 CALL TO ACTION
