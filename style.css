@@ -3464,3 +3464,14 @@ height:30px;
 }
 
 }
+.logo img{
+    height:65px;
+    width:auto;
+    display:block;
+}
+
+@media (max-width:768px){
+    .logo img{
+        height:50px;
+    }
+}
